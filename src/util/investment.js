@@ -4,8 +4,14 @@
 // - annualInvestment: The amount invested every year
 // - expectedReturn: The expected (annual) rate of return
 // - duration: The investment duration (time frame)
-export function calculateInvestmentResults({
-  initialInvestment,
+
+//input
+//initialInvestment: 10000,
+//annualInvestment: 1200,
+//expectedReturn: 6,
+//duration: 10
+export function calculateInvestmentResults({     // desctructuriram gi tuk
+  initialInvestment,       
   annualInvestment,
   expectedReturn,
   duration,

@@ -7,6 +7,7 @@ export default function UserInput({onChange, userInput}) {
                     <label>Initial Investment</label>
                     <input type="number" required
                         value={userInput.initialInvestment} //ще го използваме в event.target.value
+                        //event.target.value винаги връща стринг 
                         onChange={(event) =>
                             onChange('initialInvestment', event.target.value)} />  
                 </p>
@@ -24,7 +25,7 @@ export default function UserInput({onChange, userInput}) {
                     <input type="number" required 
                      value={userInput.expectedReturn}
                      onChange={(event) =>
-                         onChange('expectedReturn', event.target.value)}/>
+                         onChange('expectedReturn', event.target.value)}/> 
                 </p>
                 <p>
                     <label>Duration</label>
